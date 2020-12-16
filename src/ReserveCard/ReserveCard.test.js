@@ -4,12 +4,9 @@ import '@testing-library/jest-dom';
 import ReserveCard from './ReserveCard.js';
 
 describe('ReserveCard', () => {
-  it('should render correctly and display input fields', () => {
-    render(<Form />);
-    expect(screen.getByTestId('form')).toBeInTheDocument();
-    expect(screen.getByPlaceholderText('Name')).toBeInTheDocument();
-    expect(screen.getByPlaceholderText('Date (mm/dd)')).toBeInTheDocument();
-    expect(screen.getByPlaceholderText('Time')).toBeInTheDocument();
-    expect(screen.getByPlaceholderText('Number of Guests')).toBeInTheDocument();
+  it('should render correctly', () => {
+    render(<ReserveCard />);
+
+    expect(screen.getByTestId('card-container')).toBeInTheDocument();
   });
 });

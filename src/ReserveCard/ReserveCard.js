@@ -3,7 +3,7 @@ import './ReserveCard.css';
 
 const ReserveCard = ({ name, date, time, number }) => {
   return (
-    <div className="resy-card">
+    <div className="resy-card" data-testid="card-container">
       <h3>{name}</h3>
       <p>{date}</p>
       <p>{time}</p>
