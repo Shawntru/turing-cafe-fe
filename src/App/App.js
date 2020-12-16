@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { fetchReservations } from './apiCalls';
+import { fetchReservations } from '../apiCalls';
 import Reservations from '../Reservations/Reservations';
 import Form from '../Form/Form';
 import './App.css';
@@ -31,9 +31,9 @@ class App extends Component {
           <Form addResy={this.addResy} />
         </div>
         <div className="resy-container">
-          {this.state.reservations.length && (
-            <Reservations reservations={this.state.reservations} />
-          )}
+          {/* {this.state.reservations.length && ( */}
+          <Reservations reservations={this.state.reservations} />
+          {/* )} */}
         </div>
       </div>
     );
