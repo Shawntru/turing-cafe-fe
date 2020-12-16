@@ -40,7 +40,7 @@ class Form extends Component {
 
   render() {
     return (
-      <form>
+      <form data-testid="form">
         <input
           className="resy-form-input"
           type="text"
